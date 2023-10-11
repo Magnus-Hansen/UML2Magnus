@@ -17,8 +17,18 @@ namespace UML2Magnus
             }
             return int.Parse(number);
         }
+        public static int GetInt()
+        {
+            string number = Console.ReadLine();
+            while (!int.TryParse(number, out _) || int.Parse(number) < 1)
+            {
+                number = Console.ReadLine();
+            }
+            return int.Parse(number);
+        }
         public static string GetString() 
         {
+            //check if its a string of char
             return Console.ReadLine();
         }
     }

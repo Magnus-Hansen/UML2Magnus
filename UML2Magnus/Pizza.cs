@@ -16,7 +16,7 @@ namespace UML2Magnus
         #endregion
 
         #region Constructor
-        Pizza(int pizzaNo, string name, int price, string ingredients)
+        public Pizza(int pizzaNo, string name, int price, string ingredients)
         {
             _pizzaNo = pizzaNo;
             _name = name;
@@ -47,7 +47,7 @@ namespace UML2Magnus
         #region Methods
         public override string ToString()
         {
-            return _pizzaNo.ToString() + _name.ToString() + _price.ToString() + _ingredients.ToString();
+            return ($"Number: {_pizzaNo} Name: {_name} price: {_price} ingredients: {_ingredients}");
         }
         #endregion
     }

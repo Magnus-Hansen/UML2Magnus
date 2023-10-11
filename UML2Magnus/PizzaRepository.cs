@@ -36,7 +36,7 @@ namespace UML2Magnus
         }
         public void addPizza(Pizza pizza)
         {
-            if (LookupPizza(pizza.PizzaNo) != null)
+            if (LookupPizza(pizza.PizzaNo) == null)
                 _pizza.Add(pizza.PizzaNo, pizza);
         }
         public void removePizza(int pizzaNo)

@@ -1,7 +1,14 @@
-﻿internal class Program
+﻿using UML2Magnus;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        PizzaRepository pizzaRepository = new PizzaRepository();
+        CustomerRepository customerRepository = new CustomerRepository();
+
+        Terminal terminal = new Terminal(pizzaRepository, customerRepository);
+
+        terminal.Run();
     }
 }
