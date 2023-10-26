@@ -35,7 +35,7 @@ namespace UML2Magnus
         }
         public void addCustomer(Customer customer)
         {
-            if (LookupCustomer(customer.Name) != null)
+            if (LookupCustomer(customer.Name) == null)
                 _customer.Add(customer.Name, customer);
         }
         public void removeCustomer(string name)

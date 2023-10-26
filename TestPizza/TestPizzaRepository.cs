@@ -8,7 +8,7 @@ namespace TestPizza
     public class TestPizzaRepository
     {
         private PizzaRepository pizzaRepository = new PizzaRepository();
-        public void TestSetup()
+        private void TestSetup()
         {
             Pizza p1 = new Pizza(1, "bønnePizza", 45, "bønner");
             Pizza p2 = new Pizza(5, "Hawaii", 60, "ananas");

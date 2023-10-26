@@ -16,12 +16,12 @@ namespace UML2Magnus
         #endregion
 
         #region Constructor
-        Customer(string name, string tlf, string email, bool customerClub)
+        public Customer(string name, string tlf, string email)
         {
             _name = name;
             _tlf = tlf;
             _email = email;
-            _customerClub = customerClub;
+            _customerClub = false;
         }
         #endregion
 
@@ -47,7 +47,7 @@ namespace UML2Magnus
         #region Methods
         public override string ToString()
         {
-            return _name.ToString() + _tlf.ToString() + _email.ToString() + _customerClub.ToString();
+            return ($"Name: {_name} Phone: {_tlf} Email: {_email} CustomerClub: {_customerClub}");
         }
         #endregion
     }
